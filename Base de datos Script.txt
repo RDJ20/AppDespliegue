@@ -1,0 +1,22 @@
+-- Crear la base de datos
+CREATE DATABASE usuarios;
+
+-- Seleccionar la base de datos
+USE usuarios;
+
+-- Crear la tabla de usuarios
+CREATE TABLE usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(50),
+    apellido VARCHAR(50),
+    email VARCHAR(100)
+);
+
+-- Insertar usuarios de ejemplo
+INSERT INTO usuarios (nombre, apellido, email) VALUES
+    ('Juan', 'Pérez', 'juan@example.com'),
+    ('María', 'López', 'maria@example.com'),
+    ('Pedro', 'Gómez', 'pedro@example.com');
+
+-- Consultar los usuarios almacenados
+SELECT * FROM usuarios;
